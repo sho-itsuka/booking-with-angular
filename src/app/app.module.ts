@@ -4,10 +4,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 import { NgxTranslateModule } from './ngx-translate/ngx-translate.module';
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
-import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +18,9 @@ import { CoreModule } from './core/core.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     NgxTranslateModule,
+    CoreModule,
     SharedModule,
-    PagesModule,
-    CoreModule
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
