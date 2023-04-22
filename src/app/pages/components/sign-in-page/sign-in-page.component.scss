@@ -1,7 +1,7 @@
 :host {
   display:         flex;
   justify-content: center;
-  margin:          100px 0px;
+  margin:          150px 0px;
 }
 
 .mat-form-field {
@@ -11,8 +11,11 @@
 
 mat-card-title,
 mat-card-content {
+  width:           400px;
   display:         flex;
   justify-content: center;
+  line-height:     90px;
+  color:           #f5f5f5;
 }
 
 .error {
@@ -24,7 +27,7 @@ mat-card-content {
 
 .button {
   display:         flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 // /* --------------------------------------------------------------------------------
