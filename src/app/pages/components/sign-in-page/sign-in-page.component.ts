@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector:    'app-sign-in-page',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls:  ['./sign-in-page.component.scss']
 })
 export class SignInPageComponent {
+
+  form: FormGroup = new FormGroup({
+    username: new FormControl(''),
+    password: new FormControl(''),
+  });
+
+  submit() {
+    if (this.form.valid) {
+      this.submitEM.emit(this.form.value);
+    }
+  }
+  @Input() error: string | null | undefined;
+
+  @Output() submitEM = new EventEmitter();
 
 }
