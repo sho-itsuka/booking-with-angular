@@ -1,0 +1,20 @@
+{
+  "menu": {
+    "home": "Home",
+    "saveYesNoDialog": {
+      "title":      "Confirm Sign Out",
+      "message":    "Sign out?",
+      "captionYes": "Yes",
+      "captionNo":  "No"
+    },
+    "tooltip": {
+      "home":    "Return to home screen",
+      "signOut": "Sign out"
+    }
+  },
+  "signInPage": {
+    "userAccount":  "User Account",
+    "password":     "Password",
+    "signInButton": "Sign In"
+  }
+}
