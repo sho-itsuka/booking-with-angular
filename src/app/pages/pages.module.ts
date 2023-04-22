@@ -1,9 +1,12 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SignInPageComponent } from './components/sign-in-page/sign-in-page.component';
+import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
+
+import { CoreModule } from '../core/core.module';
+import { MaterialModule } from '../material/material.module';
+import { NgxTranslateModule } from '../ngx-translate/ngx-translate.module';
 import { HomeComponent } from './components/home/home.component';
-
-
+import { SignInPageComponent } from './components/sign-in-page/sign-in-page.component';
 
 @NgModule({
   declarations: [
@@ -11,7 +14,15 @@ import { HomeComponent } from './components/home/home.component';
     HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    CoreModule,
+    MaterialModule,
+    NgxTranslateModule,
+    ReactiveFormsModule
+  ],
+  exports: [
+    SignInPageComponent,
+    HomeComponent
   ]
 })
 export class PagesModule { }
