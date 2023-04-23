@@ -7,9 +7,15 @@
           <input
             matInput
             type="text"
-            formControlName="username"
+            formControlName="userAccount"
             placeholder="{{ 'signInPage.userAccount' | translate }}"
           >
+          <mat-error
+            class="validation-error"
+            *ngIf="userAccount.hasError('required')"
+          >
+            {{'validationError.required'|translate}}
+          </mat-error>
         </mat-form-field>
       </p>
 
@@ -18,18 +24,26 @@
           <input
             matInput
             type="password"
-            formControlName="password"
+            formControlName="userPassword"
             placeholder="{{ 'signInPage.password' | translate }}"
           >
+          <mat-error
+            class="validation-error"
+            *ngIf="userPassword.hasError('required')"
+          >
+            {{'validationError.required'|translate}}
+          </mat-error>
         </mat-form-field>
       </p>
 
-      <p *ngIf="error" class="error">
-        {{ error }}
-      </p>
-
       <div class="button">
-        <button type="submit" mat-stroked-button>ログイン</button>
+        <button
+          mat-stroked-button
+          type="submit"
+          [disabled]="!form.valid"
+        >
+          ログイン
+        </button>
       </div>
     </form>
   </mat-card-content>
