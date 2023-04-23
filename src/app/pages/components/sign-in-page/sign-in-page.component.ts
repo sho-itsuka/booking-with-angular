@@ -14,9 +14,12 @@ import { UrlConst } from '../../constants/url-const';
 })
 export class SignInPageComponent implements OnInit, AfterViewChecked {
 
+  userAccount  = new FormControl<string>('', [Validators.required])
+  userPassword = new FormControl<string>('', [Validators.required])
+
   form: FormGroup = new FormGroup({
-    username: new FormControl<string>('', [Validators.required]),
-    password: new FormControl<string>('', [Validators.required]),
+    userAccount:  this.userAccount,
+    userPassword: this.userPassword
   });
 
   constructor(
