@@ -1,3 +1,4 @@
+import { RoutingService } from 'src/app/core/services/routing.service';
 import { UrlConst } from 'src/app/pages/constants/url-const';
 
 import { Component } from '@angular/core';
@@ -10,7 +11,12 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   initialDisplayScreenUrl: string = UrlConst.SLASH + UrlConst.PATH_HOME;
 
-  clickSignOut(): void {
+  constructor (
+    public routingService: RoutingService
+  ) {}
 
+  clickSignOut(): void {
+    this.routingService.navigate(UrlConst.PATH_SIGN_IN);
   }
+
 }
