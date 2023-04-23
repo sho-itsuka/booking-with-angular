@@ -39,10 +39,11 @@ export class SignInPageComponent implements OnInit, AfterViewChecked {
     this.titleI18Service.setTitle(UrlConst.PATH_SIGN_IN);
   }
 
-  submit() {
+  signIn() {
     if (this.form.valid) {
       this.submitEM.emit(this.form.value);
     }
+    this.routingService.navigate(UrlConst.PATH_HOME);
   }
   @Input() error: string | null | undefined;
 
