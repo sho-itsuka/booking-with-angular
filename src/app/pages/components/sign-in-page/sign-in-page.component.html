@@ -4,13 +4,23 @@
     <form [formGroup]="form" (ngSubmit)="submit()">
       <p>
         <mat-form-field>
-          <input type="text" matInput placeholder="UserAccount" formControlName="username">
+          <input
+            matInput
+            type="text"
+            formControlName="username"
+            placeholder="{{ 'signInPage.userAccount' | translate }}"
+          >
         </mat-form-field>
       </p>
 
       <p>
         <mat-form-field>
-          <input type="password" matInput placeholder="Password" formControlName="password">
+          <input
+            matInput
+            type="password"
+            formControlName="password"
+            placeholder="{{ 'signInPage.password' | translate }}"
+          >
         </mat-form-field>
       </p>
 
@@ -21,7 +31,6 @@
       <div class="button">
         <button type="submit" mat-stroked-button>ログイン</button>
       </div>
-
     </form>
   </mat-card-content>
 </mat-card>
