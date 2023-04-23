@@ -12,6 +12,10 @@
       "signOut": "ログアウトします。"
     }
   },
+  "title": {
+    "system":  "【Booking App】",
+    "sign-in": "ログイン"
+  },
   "signInPage": {
     "userAccount":  "ユーザーアカウント",
     "password":     "パスワード",

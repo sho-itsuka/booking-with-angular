@@ -12,6 +12,10 @@
       "signOut": "Sign out"
     }
   },
+  "title": {
+    "system":  "【Booking App】",
+    "sign-in": "Sign In"
+  },
   "signInPage": {
     "userAccount":  "User Account",
     "password":     "Password",
