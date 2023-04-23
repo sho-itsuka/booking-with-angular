@@ -1,0 +1,50 @@
+<mat-card>
+  <mat-card-title>ログイン画面</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="signIn()">
+      <p>
+        <mat-form-field>
+          <input
+            matInput
+            type="text"
+            formControlName="userAccount"
+            placeholder="{{ 'signInPage.userAccount' | translate }}"
+          >
+          <mat-error
+            class="validation-error"
+            *ngIf="userAccount.hasError('required')"
+          >
+            {{'validationError.required'|translate}}
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field>
+          <input
+            matInput
+            type="password"
+            formControlName="userPassword"
+            placeholder="{{ 'signInPage.password' | translate }}"
+          >
+          <mat-error
+            class="validation-error"
+            *ngIf="userPassword.hasError('required')"
+          >
+            {{'validationError.required'|translate}}
+          </mat-error>
+        </mat-form-field>
+      </p>
+
+      <div class="button">
+        <button
+          mat-stroked-button
+          type="submit"
+          [disabled]="!form.valid"
+        >
+          ログイン
+        </button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

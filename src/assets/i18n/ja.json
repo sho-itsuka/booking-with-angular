@@ -1,0 +1,31 @@
+{
+  "menu": {
+    "home": "ホーム",
+    "saveYesNoDialog": {
+      "title":      "ログアウトの確認",
+      "message":    "ログアウトしますか？",
+      "captionYes": "はい",
+      "captionNo":  "いいえ"
+    },
+    "tooltip": {
+      "home":    "ホーム画面へ戻ります。",
+      "signOut": "ログアウトします。"
+    }
+  },
+  "title": {
+    "system":  "【Booking App】",
+    "sign-in": "ログイン"
+  },
+  "signInPage": {
+    "userAccount":  "ユーザーアカウント",
+    "password":     "パスワード",
+    "signInButton": "サインイン"
+  },
+  "validationError": {
+    "required": "入力が必要な項目です。",
+    "pattern": {
+      "singleByteAlphanumeric": "半角英数を入力してください。",
+      "halfWidthNumericComma":  "数値を入力してください。"
+    }
+  }
+}

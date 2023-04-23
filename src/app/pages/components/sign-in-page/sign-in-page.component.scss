@@ -1,0 +1,91 @@
+:host {
+  display:         flex;
+  justify-content: center;
+  margin:          150px 0px;
+}
+
+.mat-form-field {
+  width:     100%;
+  min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content {
+  width:           400px;
+  display:         flex;
+  justify-content: center;
+  line-height:     90px;
+  color:           #f5f5f5;
+}
+
+.error {
+  padding:          16px;
+  width:            300px;
+  color:            white;
+  background-color: red;
+}
+
+.button {
+  display:         flex;
+  justify-content: center;
+}
+
+// /* --------------------------------------------------------------------------------
+//  * Sign in page.
+//  * -------------------------------------------------------------------------------- */
+// .sign-in-page-wrapper {
+//   width:       450px;
+//   height:      300px;
+//   margin:      50px auto 0;
+//   padding-top: 100px;
+// }
+
+// .sign-in-page {
+//   background-color: #ffffff;
+//   border:           1px solid rgb(236, 239, 241, 0.45);
+// }
+
+// .sign-in-title {
+//   height:           30px;
+//   width:            440px;
+//   margin:           0 auto 0;
+//   padding:          0 5px;
+//   background-color: #1B435D;
+// }
+
+// .sign-in-title p {
+//   line-height: 30px;
+//   color:       #ffffff;
+// }
+
+// .sign-in-item {
+//   width:      80%;
+//   margin:     20px auto 0;
+//   text-align: center;
+// }
+
+// .sign-in-item input[type=text],
+// .sign-in-item input[type=password] {
+//   border-width: 0;
+//   display:      block;
+//   width:        20rem;
+//   margin:       50px auto 50px;
+// }
+
+// .sign-in-item .button {
+//   display:          block;
+//   padding:          10px 0;
+//   margin:           50px auto 50px;
+//   width:            200px;
+//   border-radius:    2px;
+//   background-color: #78BBE6;
+//   color:            #ffffff;
+//   text-decoration:  none;
+//   text-align:       center;
+//   letter-spacing:   1px;
+//   font-size:        1.2rem;
+// }
+
+// .sign-in-item .button:hover {
+//   opacity: 0.9;
+// }
