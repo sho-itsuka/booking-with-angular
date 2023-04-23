@@ -20,5 +20,12 @@
     "userAccount":  "User Account",
     "password":     "Password",
     "signInButton": "Sign In"
+  },
+  "validationError": {
+    "required": "Required field.",
+    "pattern": {
+      "singleByteAlphanumeric": "Please enter half-width alphanumeric characters.",
+      "halfWidthNumericComma":  "Please enter a number."
+    }
   }
 }

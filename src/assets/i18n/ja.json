@@ -20,5 +20,12 @@
     "userAccount":  "ユーザーアカウント",
     "password":     "パスワード",
     "signInButton": "サインイン"
+  },
+  "validationError": {
+    "required": "入力が必要な項目です。",
+    "pattern": {
+      "singleByteAlphanumeric": "半角英数を入力してください。",
+      "halfWidthNumericComma":  "数値を入力してください。"
+    }
   }
 }
