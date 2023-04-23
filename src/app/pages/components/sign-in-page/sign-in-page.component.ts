@@ -13,6 +13,7 @@ import { UrlConst } from '../../constants/url-const';
   styleUrls:  ['./sign-in-page.component.scss']
 })
 export class SignInPageComponent implements OnInit, AfterViewChecked {
+  hide = true;
 
   userAccount  = new FormControl<string>('', [Validators.required])
   userPassword = new FormControl<string>('', [Validators.required])

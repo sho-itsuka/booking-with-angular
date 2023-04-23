@@ -1,0 +1,51 @@
+<header class="header-wrapper">
+  <mat-toolbar class="toolbar">
+    <mat-toolbar-row class="toolbar-row">
+      <button
+        mat-button
+        routerLink="{{initialDisplayScreenUrl}}"
+        class="menu btnSystemName"
+        matTooltip="{{ 'menu.tooltip.home' | translate }}">
+        <div>
+          Booking App
+        </div>
+      </button>
+
+      <div class="toolBarMenu">
+        <ng-container>
+          <button
+            class="menu mainMenu"
+            mat-button
+            [matMenuTriggerFor]="appMenu"
+          >
+            <div>
+              メニュー名
+            </div>
+          </button>
+          <mat-menu #appMenu="matMenu">
+            <ng-container>
+              <button
+                class="menu subMenu"
+                mat-menu-item
+                matTooltip="{{ 'menu.tooltip.subMenu.' | translate }}"
+                routerLink="#">
+              </button>
+            </ng-container>
+          </mat-menu>
+        </ng-container>
+      </div>
+
+      <button
+        id="sign-out-button"
+        class="menu btnSignOut"
+        mat-button
+        matTooltip="{{ 'menu.tooltip.signOut' | translate }}"
+        (click)="clickSignOut()"
+      >
+        <mat-icon>
+          exit_to_app
+        </mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
