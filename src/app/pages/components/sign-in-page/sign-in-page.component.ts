@@ -1,5 +1,7 @@
+import { RoutingService } from 'src/app/core/services/routing.service';
+
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -10,12 +12,13 @@ import { TranslateService } from '@ngx-translate/core';
 export class SignInPageComponent implements OnInit {
 
   form: FormGroup = new FormGroup({
-    username: new FormControl(''),
-    password: new FormControl(''),
+    username: new FormControl<string>('', [Validators.required]),
+    password: new FormControl<string>('', [Validators.required]),
   });
 
   constructor(
-    public translateService: TranslateService
+    public  translateService: TranslateService,
+    private routingService:   RoutingService
   ) {}
 
   /**
