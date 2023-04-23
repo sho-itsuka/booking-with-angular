@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { MaterialModule } from '../material/material.module';
 import { NgxTranslateModule } from '../ngx-translate/ngx-translate.module';
+import { YesNoDialogComponent } from './components/yes-no-dialog/yes-no-dialog.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    YesNoDialogComponent
+  ],
   imports: [
     CommonModule,
     MaterialModule,
