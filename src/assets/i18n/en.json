@@ -14,7 +14,8 @@
   },
   "title": {
     "system":  "【Booking App】",
-    "sign-in": "Sign In"
+    "sign-in": "Sign In",
+    "home": "Home"
   },
   "signInPage": {
     "userAccount":  "User Account",
