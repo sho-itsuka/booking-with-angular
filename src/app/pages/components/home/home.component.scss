@@ -1,6 +1,12 @@
 .mat-card-wrapper {
-  top: 50px;
-  margin-top: 50px;
+  display: flex;
+  justify-content: space-around
+}
+
+mat-card {
+  top:    50px;
+  margin: 50px 50px;
+  width:  25%;
 }
 
 .mat-card-title-group {
