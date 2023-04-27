@@ -2,13 +2,18 @@
   <mat-toolbar class="toolbar">
     <mat-toolbar-row class="toolbar-row">
       <button
+        mat-icon-button
+        class="btnSideNav"
+        (click)="clickSideNav()"
+      >
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button
         mat-button
         routerLink="{{initialDisplayScreenUrl}}"
         class="menu btnSystemName"
         matTooltip="{{ 'menu.tooltip.home' | translate }}">
-        <div>
-          Booking App
-        </div>
+        <mat-icon>home</mat-icon>
       </button>
 
       <div class="toolBarMenu">
@@ -18,9 +23,7 @@
             mat-button
             [matMenuTriggerFor]="appMenu"
           >
-            <div>
-              メニュー名
-            </div>
+            <mat-icon>accessibility</mat-icon>
           </button>
           <mat-menu #appMenu="matMenu">
             <ng-container>

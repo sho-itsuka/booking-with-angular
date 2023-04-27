@@ -6,7 +6,7 @@ import { RoutingService } from 'src/app/core/services/routing.service';
 import { AppConst } from 'src/app/pages/constants/app-const';
 import { UrlConst } from 'src/app/pages/constants/url-const';
 
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -18,11 +18,17 @@ import { TranslateService } from '@ngx-translate/core';
 export class HeaderComponent {
   initialDisplayScreenUrl: string = UrlConst.SLASH + UrlConst.PATH_HOME;
 
+  @Output() sideNavToggle = new EventEmitter();
+
   constructor (
     public  routingService:   RoutingService,
     private matDialog:        MatDialog,
     private translateService: TranslateService
   ) {}
+
+  clickSideNav(): void {
+    this.sideNavToggle.emit();
+  }
 
   clickSignOut(): void {
     const dialogData: YesNoDialogData = {
