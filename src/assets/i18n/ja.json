@@ -9,13 +9,17 @@
     },
     "tooltip": {
       "home":    "ホーム画面へ戻ります。",
-      "signOut": "ログアウトします。"
+      "signOut": "ログアウトします。",
+      "person":  "自己紹介ページ",
+      "subMenu1": "About Work",
+      "subMenu2": "About Study"
     }
   },
   "title": {
     "system":  "【Booking App】",
     "sign-in": "ログイン",
-    "home": "ホーム"
+    "home":    "ホーム",
+    "person":  "自己紹介ページ"
   },
   "signInPage": {
     "userAccount":  "ユーザーアカウント",

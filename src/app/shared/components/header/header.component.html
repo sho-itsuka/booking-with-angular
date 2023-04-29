@@ -1,41 +1,46 @@
 <header class="header-wrapper">
   <mat-toolbar class="toolbar">
     <mat-toolbar-row class="toolbar-row">
-      <button
+      <!-- <button
         mat-icon-button
         class="btnSideNav"
         (click)="clickSideNav()"
       >
         <mat-icon>menu</mat-icon>
-      </button>
+      </button> -->
       <button
         mat-button
-        routerLink="{{initialDisplayScreenUrl}}"
         class="menu btnSystemName"
+        routerLink="{{initialDisplayScreenUrl}}"
         matTooltip="{{ 'menu.tooltip.home' | translate }}">
         <mat-icon>home</mat-icon>
       </button>
 
       <div class="toolBarMenu">
-        <ng-container>
-          <button
-            class="menu mainMenu"
-            mat-button
-            [matMenuTriggerFor]="appMenu"
+        <button
+          mat-button
+          class="menu mainMenu"
+          matTooltip="{{ 'menu.tooltip.person' | translate }}"
+          [matMenuTriggerFor]="appMenu"
           >
-            <mat-icon>accessibility</mat-icon>
+          <mat-icon>accessibility</mat-icon>
+        </button>
+        <mat-menu #appMenu="matMenu">
+          <button
+            class="menu subMenu1"
+            mat-menu-item
+            routerLink="#"
+          >
+            {{ 'menu.tooltip.subMenu1' | translate }}
           </button>
-          <mat-menu #appMenu="matMenu">
-            <ng-container>
-              <button
-                class="menu subMenu"
-                mat-menu-item
-                matTooltip="{{ 'menu.tooltip.subMenu.' | translate }}"
-                routerLink="#">
-              </button>
-            </ng-container>
-          </mat-menu>
-        </ng-container>
+          <button
+            class="menu subMenu2"
+            mat-menu-item
+            routerLink="#"
+          >
+            {{ 'menu.tooltip.subMenu2' | translate }}
+          </button>
+        </mat-menu>
       </div>
 
       <button

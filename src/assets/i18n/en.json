@@ -9,13 +9,17 @@
     },
     "tooltip": {
       "home":    "Return to home screen",
-      "signOut": "Sign out"
+      "signOut": "Sign out",
+      "person":  "Personal",
+      "subMenu1": "About Work",
+      "subMenu2": "About Study"
     }
   },
   "title": {
     "system":  "【Booking App】",
     "sign-in": "Sign In",
-    "home": "Home"
+    "home":    "Home",
+    "person":  "Personal Page"
   },
   "signInPage": {
     "userAccount":  "User Account",
